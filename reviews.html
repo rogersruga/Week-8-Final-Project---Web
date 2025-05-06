@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Galore - Reviews</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tech Galore</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="carousel">
+        <img src="images/tech-galore.png" alt="Featured Tech 1" class="carousel-image" />
+        
+      </section>
+      
+    <h2>Latest Reviews</h2>
+    <div class="filters">
+      <button onclick="filterReviews('all')">All</button>
+      <button onclick="filterReviews('phone')">Phones</button>
+      <button onclick="filterReviews('laptop')">Laptops</button>
+    </div>
+
+    <div class="reviews">
+      <div class="review phone">
+        <img src="images/galaxy-ultra.png" alt="Phone" onclick="openModal(this.src)" />
+        <h3>Galaxy Ultra 24</h3>
+        <p>A powerhouse phone with an amazing camera!</p>
+      </div>
+      <div class="review laptop">
+        <img src="images/Macbook-Pro-14-M3.webp" alt="Laptop" onclick="openModal(this.src)" />
+        <h3>MacBook Pro M3</h3>
+        <p>Blazing speed and efficient performance.</p>
+      </div>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+  </main>
+
+  <footer>
+    <p><center>&copy; 2025 Tech Galore. All rights reserved.</center></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Galore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tech Galore</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><button id="themeToggle">Toggle Theme</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="carousel">
+      <img src="images/tech-galore.png" alt="Featured Tech 1" class="carousel-image" />
+      
+    </section>
+
+    <section class="welcome">
+      <h2>Welcome to Tech Galore!</h2>
+      <p>Your ultimate source for the latest tech gadgets, product reviews, and tech tips!</p>
+    </section>
+
+    <section class="highlights">
+        <h2>Tech Galore Highlights</h2>
+        <div class="highlight-cards">
+          <div class="card">
+            <h3>Tech Tips</h3>
+            <button onclick="showTip()">Reveal a Tip</button>
+            <p id="tipDisplay"></p>
+          </div>
+          <div class="card">
+            <h3>Did You Know?</h3>
+            <p class="fact-hover">Hover to reveal a fun fact!</p>
+            <p class="hidden-fact">The first computer virus was created in 1986 and was called Brain.</p>
+          </div>
+          <div class="card">
+            <h3>Join the Community</h3>
+            <a href="#" class="join-btn">Sign Up</a>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p><center>&copy; 2025 Tech Galore. All rights reserved.</center></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
